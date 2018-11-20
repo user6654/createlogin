@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 https://www.udemy.com/angular-essentials-angular-2-angular-4-with-typescript/learn/v4/t/lecture/7459198?start=0
 
+=======
+
+https://www.udemy.com/angular-essentials-angular-2-angular-4-with-typescript/learn/v4/t/lecture/7459198?start=0
+>>>>>>> ba540c4ce7d18b4177753af5468ec61449ac405e
 
 # Createlogin
 
