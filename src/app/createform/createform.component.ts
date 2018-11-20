@@ -10,7 +10,6 @@ import { FormActionsService } from '../form-actions.service';
 export class CreateformComponent implements OnInit {
   @Input() users;
 
-  users=[];
   password = [];
   selectedList = 'all';
 

@@ -1,16 +1,46 @@
 <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+
   <div class="form-group">
     <label for="name">Member Name</label>
     <input type="text" id="name" name="name" class="form-control" ngModel>
   </div>
+
   <div class="form-group">
     <label for="side">Password</label>
     <input type="text" id="password" name="password" class="form-control" ngModel>
   </div>
+
   <button class="btn btn-primary" type="submit">Confirm Registration</button>
+
 </form>
+<h2>For testing only:</h2>
 <form (ngSubmit)="getUsers()">
-<button class="btn btn-primary" type="submit">List Current Members</button>
-<div *ngFor="let u of users"
-[user]="u"></div>
+
+  <button class="btn btn-primary" type="submit">List Current Members</button>
+
+  <div class="list-group" ></div>
+
+  <ul>
+      <li *ngFor="let u of users">
+        {{u.name}}, {{u.password}}
+      </li>
+  </ul>
+
 </form>
+
+
+<!--
+
+Current state:
+~ yet to
+~
+
+Target state:
+~ Default welcome page is not registration but member sign-in
+~ Separate page for registration
+~ Must check for not yet registered user
+~ Checks to avoid conflicts for new registration with already registered info (disallow registration for member registered username)
+
+-->
+
+
